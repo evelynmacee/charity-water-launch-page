@@ -1,21 +1,26 @@
 body {
-  background: lightblue;
-  text-align: center;
-  font-family: 'Segoe UI', Arial, sans-serif;
+  background: url('little girl.png') no-repeat center center fixed;
+  background-size: cover;
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
 }
 
 h1, h2 {
-  text-align: center;
+  text-align: left;
 }
 
 h1 {
   font-size: 48px;
-  color: #002147; /* dark blue */
+  color: #fed8c1; /* dark blue */
 }
 
 h2 {
-  font-size: 32px;
-  color:yellow; /* light yellow */
+  font-size: 10px;
+  color:#fed8c1; /* light yellow */
 }
 
 p {
@@ -32,4 +37,101 @@ p {
   padding: 32px 24px;
   box-shadow: 0 4px 16px rgba(0,0,0,0.08);
   text-align: center;
+}
+
+.donate-btn {
+  display: block;
+  margin: 24px auto 0 auto;
+  padding: 12px 32px;
+  background: #0074D9;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.donate-btn:hover {
+  background: #005fa3;
+}
+
+.bg-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.logo-bar {
+  width: 100%;
+  background: #77a8bb;
+  padding: 10px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.logo-img {
+  height: 90px;
+  width: auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo-donate-btn {
+  margin-right: 32px;
+  margin-top: -4px;
+  background: #ffc907;
+
+  padding: 6px 18px;
+  font-size: 16px;
+}
+
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: #77a8bb;
+  padding: 12px 0;
+  z-index: 10;
+}
+
+.footer-text {
+  text-align: center;
+  color: #222;
+  font-size: 16px;
+  opacity: 0.85;
+  margin: 0;
+}
+
+.tagline {
+  line-height: 1.8;
+}
+
+.header-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 32px;
+  margin-bottom: 12px;
+}
+
+.header-row h1 {
+  margin: 0;
+}
+
+.header-row .donate-btn {
+  margin-top: 0;
+  align-self: flex-start;
 }
